@@ -15,6 +15,13 @@ To prepare the dataset, navigate into the **data** folder and run the following 
 
 Several configurations can be set in the *download_dataset.py* script, such as number of video clips and normalizing audio. 
 
+For audiovisual models, navigate to **model/pretrain_model** and generate the face embeddings. Run the following command: 
+
+    python pretrain_load_test.py
+
+Then, rename the output folder to **face_emb** and move it to **data/video**.
+
+
 #### Model Training
 To train the audio-only speech separation model, navigate to **model/model_v1** and run the following command: 
 
@@ -27,13 +34,17 @@ To train the audiovisual speech separation model, navigate to **model/model_v2**
     python AV_train.py
 
 
+
 #### Model Inference
-Copy and paste the saved H5 model file into **saved_xx_models** folders. Afterwards, modify the file path in the *predict_video.py* script and run the following command:
+Copy and paste the saved H5 model file into **saved_AV/AO_models** folders. For testing data, change the **dl_from_training** variable to **False** in the *download_dataset.py* script.
+
+Afterwards, modify the file path in the *AV/AO_predict_video.py* script and run the following command:
 
 
-    python predict_video.py
+    python AO_predict_video.py
+    python AV_predict_video.py
 
-The estimated speech files will be in the **pred** folder.
+The estimated speech files will be in the respective **pred** folder.
 
 
 
