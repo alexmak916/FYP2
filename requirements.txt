@@ -1,0 +1,13 @@
+numpy
+matplotlib
+librosa
+tensorflow
+keras
+youtube-dl
+pytest
+sox
+scipy
+sklearn
+mtcnn
+opencv-python
+pillow
