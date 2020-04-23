@@ -4,14 +4,7 @@ Title: A Robust Speaker-aware Speech Separation Technique using Composite Speech
 Disclaimer: This project borrows reference from another repository - [Google Audiovisual Model](https://github.com/ktam069/speech_separation_modified "Google Audiovisual Model").
 
 ### Dependencies
-The project runs on Python 3.6. Please download and pip install: 
-- keras 2.3.1
-- tensorflow 1.13.1
-- librosa
-- youtube-dl
-- pytest
-- sox 
-- ffmpeg 
+The project runs on Python 3.6. Please download and pip install packages in *requirements.txt*
 
 ### Instructions
 ------------
